@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aksa Resorts — Pahalgam, Kashmir</title>
+  <meta name="description" content="Experience the four seasons of Kashmir at Aksa Resorts, Pahalgam. Luxury stay near Mammal Temple since 1995."/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-text">AKSA</span>
+      <span class="logo-sub">RESORTS</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#rooms">Rooms</a></li>
+      <li><a href="#amenities">Amenities</a></li>
+      <li><a href="#seasons">Seasons</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#book" class="nav-book">Book Now</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="snowCanvas"></canvas>
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image:url('images/winter.webp')"></div>
+      <div class="hero-slide" style="background-image:url('images/aksa_resort.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/c94e554d95832fda3a16ec001c4b80c2.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/autumn.jpg')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">Pahalgam, Kashmir</p>
+      <h1 class="hero-title">
+        <span class="title-line">Aksa</span>
+        <span class="title-line gold">Resorts</span>
+      </h1>
+      <p class="hero-desc">Where Kashmir's four seasons become your living experience</p>
+      <a href="#book" class="btn-gold">Reserve Your Stay</a>
+    </div>
+    <div class="season-indicators">
+      <button class="season-dot active" data-season="0" data-label="Winter"></button>
+      <button class="season-dot" data-season="1" data-label="Spring"></button>
+      <button class="season-dot" data-season="2" data-label="Summer"></button>
+      <button class="season-dot" data-season="3" data-label="Autumn"></button>
+    </div>
+    <div class="season-label" id="seasonLabel">Winter</div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text reveal-left">
+          <p class="section-label">Est. 1995</p>
+          <h2 class="section-title">A Stay Rooted in<br><span class="gold">Kashmir's Soul</span></h2>
+          <p>Aksa Resorts has been welcoming guests to the valley of Pahalgam for over 30 years. Set near the sacred Mammal Temple, our 22 rooms offer a blend of warm Kashmiri hospitality and the kind of serenity that only the mountains can offer.</p>
+          <p>Whether you arrive in the hush of snow, the bloom of spring, the warmth of summer, or the golden calm of autumn — Aksa is here, exactly as it has always been.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num gold">30+</span>
+              <span class="stat-label">Years of Hospitality</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num gold">22</span>
+              <span class="stat-label">Rooms</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num gold">4</span>
+              <span class="stat-label">Seasons, One Home</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-contact reveal-right">
+          <div class="contact-card">
+            <h3>Find Us</h3>
+            <p>Near Mammal Temple<br>Pahalgam, J&K — 192126</p>
+            <a href="tel:+919419045314">+91 94190 45314</a>
+            <a href="mailto:booking@aksaresorts.com">booking@aksaresorts.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OWNER -->
+  <section class="owner" id="owner">
+    <div class="container">
+      <div class="owner-content">
+        <div class="owner-photo-wrap reveal-left">
+          <div class="owner-frame">
+            <img src="images/AKSA.JPG" alt="Ashaq Hussain Shangloo — Founder, Aksa Resorts" class="owner-img"/>
+          </div>
+        </div>
+        <div class="owner-text reveal-right">
+          <p class="section-label">The Man Behind Aksa</p>
+          <h2 class="section-title"><span class="gold">Ashaq Hussain</span><br>Shangloo</h2>
+          <p class="owner-designation">Founder &amp; Host, Aksa Resorts</p>
+          <p>Born and raised in Srinagar, Ashaq Hussain Shangloo has spent a lifetime building things that carry the warmth and character of Kashmir. From his family's textile legacy in Maharaj Gunj to Ladycare in the heart of Lal Chowk, every venture he has touched reflects a belief in quality, tradition, and honest work.</p>
+          <p>In 1995, he brought that same belief to Pahalgam — and Aksa Resorts was born. What started as a personal vision has grown into a place where thousands of guests have found rest, beauty, and a genuine taste of Kashmiri living. He still considers every guest at Aksa a personal visitor in his home.</p>
+          <p class="owner-quote">"Pahalgam gave me peace. Aksa is how I share it."</p>
+          <p class="owner-sig">— Ashaq Hussain Shangloo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOMS -->
+  <section class="rooms" id="rooms">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">Accommodation</p>
+        <h2 class="section-title">Choose Your <span class="gold">Room</span></h2>
+        <p class="section-desc">Each room is designed to bring the landscape inside — warm tones, soft light, and views that remind you exactly where you are.</p>
+      </div>
+      <div class="rooms-grid">
+        <div class="room-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-max="10">
+          <div class="room-img"><img src="images/room_double.png" alt="Double Bed Room"/></div>
+          <div class="room-body">
+            <h3>Double Bed Room</h3>
+            <p>Spacious and well-appointed with a double bed, mountain-facing window, and all the comforts for a restful stay.</p>
+            <a href="#book" class="room-link">Enquire Now</a>
+          </div>
+        </div>
+        <div class="room-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-max="10">
+          <div class="room-img"><img src="images/room_connecting.png" alt="Connecting Room"/></div>
+          <div class="room-body">
+            <h3>Connecting Room</h3>
+            <p>Two adjoining rooms sharing an internal door — ideal for families or groups who want comfort and closeness.</p>
+            <a href="#book" class="room-link">Enquire Now</a>
+          </div>
+        </div>
+        <div class="room-card featured" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-max="10">
+          <div class="room-badge">Suite</div>
+          <div class="room-img"><img src="images/room_suite.png" alt="Suite Room"/></div>
+          <div class="room-body">
+            <h3>Suite Room</h3>
+            <p>Our finest offering — a generous suite with a separate sitting area, premium furnishings, and uninterrupted valley views.</p>
+            <a href="#book" class="room-link">Enquire Now</a>
+          </div>
+        </div>
+        <div class="room-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-max="10">
+          <div class="room-img"><img src="images/room_family.png" alt="Family Room"/></div>
+          <div class="room-body">
+            <h3>Family Room</h3>
+            <p>Designed with families in mind — extra space, multiple beds, and a layout that lets everyone settle in comfortably.</p>
+            <a href="#book" class="room-link">Enquire Now</a>
+          </div>
+        </div>
+        <div class="room-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-max="10">
+          <div class="room-img"><img src="images/room_single.png" alt="Single Bed Room"/></div>
+          <div class="room-body">
+            <h3>Single Bed Room</h3>
+            <p>Thoughtfully designed for solo travelers — cosy, private, and everything you need for a quiet stay in the mountains.</p>
+            <a href="#book" class="room-link">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section class="amenities" id="amenities">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">What We Offer</p>
+        <h2 class="section-title">Amenities &amp; <span class="gold">Services</span></h2>
+      </div>
+      <div class="amenities-grid">
+        <div class="amenity-item reveal-up"><div class="amenity-icon">&#x1F37D;</div><h4>In-House Dining</h4><p>Kashmiri cuisine prepared fresh and served warm</p></div>
+        <div class="amenity-item reveal-up"><div class="amenity-icon">&#x1F4F6;</div><h4>Free Wi-Fi</h4><p>Stay connected throughout the property</p></div>
+        <div class="amenity-item reveal-up"><div class="amenity-icon">&#x1F697;</div><h4>Parking</h4><p>Secure on-site parking for all guests</p></div>
+        <div class="amenity-item reveal-up"><div class="amenity-icon">&#x1F6CE;</div><h4>Room Service</h4><p>Attentive service at your door, any time</p></div>
+        <div class="amenity-item reveal-up"><div class="amenity-icon">&#x26F0;</div><h4>Mountain Views</h4><p>Wake up to the valleys of Pahalgam</p></div>
+        <div class="amenity-item reveal-up"><div class="amenity-icon">&#x1F525;</div><h4>Room Heating</h4><p>Central heating through cold Kashmir winters</p></div>
+        <div class="amenity-item reveal-up"><div class="amenity-icon">&#x1F9BA;</div><h4>Laundry</h4><p>In-house laundry service available on request</p></div>
+        <div class="amenity-item reveal-up"><div class="amenity-icon">&#x1F9ED;</div><h4>Tour Assistance</h4><p>Local guides and trip planning support</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEASONS -->
+  <section class="seasons" id="seasons">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">Year Round</p>
+        <h2 class="section-title">Kashmir in Every <span class="gold">Season</span></h2>
+      </div>
+    </div>
+    <div class="seasons-panel">
+      <div class="season-tab active" data-season="winter">
+        <div class="season-bg" style="background-image:url('images/winter.webp')"></div>
+        <div class="season-content">
+          <h3>Winter</h3>
+          <p>Snow blankets the valley in silence. Pahalgam transforms into a white world — frozen rivers, frost-covered pines, and the kind of quiet that only mountains know. Aksa keeps you warm through all of it.</p>
+        </div>
+      </div>
+      <div class="season-tab" data-season="spring">
+        <div class="season-bg" style="background-image:url('images/aksa_resort.jpg')"></div>
+        <div class="season-content">
+          <h3>Spring</h3>
+          <p>The valley wakes up slowly. Wildflowers push through the thaw, the Lidder river runs clear and fast, and the air smells like the earth breathing again. Spring in Pahalgam is something you carry with you long after you leave.</p>
+        </div>
+      </div>
+      <div class="season-tab" data-season="summer">
+        <div class="season-bg" style="background-image:url('images/c94e554d95832fda3a16ec001c4b80c2.jpg')"></div>
+        <div class="season-content">
+          <h3>Summer</h3>
+          <p>Long golden days, cool mountain air, and a valley in full bloom. Trekking trails, shepherd meadows, and evenings cool enough for a warm cup of kahwa on the balcony.</p>
+        </div>
+      </div>
+      <div class="season-tab" data-season="autumn">
+        <div class="season-bg autumn-tint" style="background-image:url('images/autumn.jpg')"></div>
+        <div class="season-content">
+          <h3>Autumn</h3>
+          <p>Chinar trees turn amber, saffron fields glow, and the mountains take on a warmth that feels like a quiet farewell before winter. Autumn is Pahalgam's most gently beautiful season.</p>
+        </div>
+      </div>
+    </div>
+    <div class="season-nav">
+      <button class="sn-btn active" data-season="winter">Winter</button>
+      <button class="sn-btn" data-season="spring">Spring</button>
+      <button class="sn-btn" data-season="summer">Summer</button>
+      <button class="sn-btn" data-season="autumn">Autumn</button>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="location" id="location">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">Getting Here</p>
+        <h2 class="section-title">Find <span class="gold">Aksa Resorts</span></h2>
+      </div>
+      <div class="location-content">
+        <div class="location-info reveal-left">
+          <h3>Near Mammal Temple</h3>
+          <p>Pahalgam, Jammu &amp; Kashmir<br>India — 192126</p>
+          <div class="loc-divider"></div>
+          <p><strong>From Srinagar:</strong> Approx. 95 km — 2.5 hours by road</p>
+          <p><strong>From Jammu:</strong> Approx. 270 km — 6 hours by road</p>
+          <div class="loc-divider"></div>
+          <a href="tel:+919419045314" class="btn-gold-outline">Call for Directions</a>
+        </div>
+        <div class="map-wrap reveal-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13270.0!2d75.3136!3d34.0159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18e7f5cf5b559%3A0x99e8c91764aa0d0b!2sPahalgam%2C%20Jammu%20and%20Kashmir!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Aksa Resorts Location — Pahalgam">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK NOW -->
+  <section class="book" id="book">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">Reservations</p>
+        <h2 class="section-title">Plan Your <span class="gold">Stay</span></h2>
+        <p class="section-desc">Book directly through us or via your preferred platform below.</p>
+      </div>
+      <div class="book-content">
+        <div class="booking-platforms reveal-left">
+          <h3>Book Via Platform</h3>
+          <div class="platform-buttons">
+            <a href="https://www.booking.com" target="_blank" class="platform-btn">Booking.com</a>
+            <a href="https://www.makemytrip.com" target="_blank" class="platform-btn">MakeMyTrip</a>
+            <a href="https://www.agoda.com" target="_blank" class="platform-btn">Agoda</a>
+            <a href="https://www.tripadvisor.in" target="_blank" class="platform-btn">TripAdvisor</a>
+            <a href="https://www.goibibo.com" target="_blank" class="platform-btn">Goibibo</a>
+          </div>
+        </div>
+        <div class="booking-form reveal-right">
+          <h3>Send a Direct Enquiry</h3>
+          <form id="bookingForm">
+            <div class="form-row">
+              <input type="text" placeholder="Your Name" required/>
+              <input type="tel" placeholder="Phone Number" required/>
+            </div>
+            <div class="form-row">
+              <input type="date" required/>
+              <input type="date" required/>
+            </div>
+            <select required>
+              <option value="" disabled selected>Select Room Type</option>
+              <option>Double Bed Room</option>
+              <option>Connecting Room</option>
+              <option>Suite Room</option>
+              <option>Family Room</option>
+              <option>Single Bed Room</option>
+            </select>
+            <textarea placeholder="Any special requests or questions?" rows="3"></textarea>
+            <button type="submit" class="btn-gold">Send Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-text">AKSA</span>
+          <span class="logo-sub">RESORTS</span>
+          <p>Near Mammal Temple, Pahalgam<br>Jammu &amp; Kashmir — 192126</p>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#rooms">Rooms</a>
+          <a href="#amenities">Amenities</a>
+          <a href="#seasons">Seasons</a>
+          <a href="#location">Location</a>
+          <a href="#book">Book Now</a>
+        </div>
+        <div class="footer-contact">
+          <a href="tel:+919419045314">+91 94190 45314</a>
+          <a href="mailto:booking@aksaresorts.com">booking@aksaresorts.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Aksa Resorts. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
